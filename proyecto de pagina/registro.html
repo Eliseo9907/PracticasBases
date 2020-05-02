@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="Stylesheet" href="style.css">
+    <script src="jquery-1.11.1.js"></script>
+</head>
+<body>
+    <header>
+            <nav>
+                <div class ="Base de datos">Registro de empleados</div>
+                <div class="enlaces">
+                    <a href="Principal.php">Inicio</a>
+                    <a href="baseD.php">consulta</a>
+                </div>
+            </nav>
+    </header>
+   <form action="form.php" method="post">
+        <label for="">Empleado</label>
+        <input type="text" id="nombre" name="nombre" placeholder="*Nombre">
+        <input type="text" name="edad" placeholder="*edad">
+        <input type="text" name="salario" placeholder="*salario">
+        <input type="text" name="correo" placeholder="*correo">
+
+        <div id="mensaje1">Los campos con * son requeridos</div>
+        <div id="mensaje2">El campo nombre es requerido</div>
+        <div id="mensaje3">El campo edad es requerido</div>
+        <div id="mensaje4">El campo salario es requerido</div>
+        <div id="mensaje5">El campo correo es requerido</div>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+  </body>
+</html>

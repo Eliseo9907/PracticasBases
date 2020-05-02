@@ -1,0 +1,103 @@
+*{
+
+	margin:10;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	/*para letras*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	background: #e4e4e4;
+
+}
+header{
+	background: #ffb922;
+	width: 100%;
+	padding: 0.5em 1em;
+	font-size: 1.1em;
+	color:#ffffff;
+}
+
+header nav{
+	display: flex;
+	justify-content: space-between;/*ordenar */
+	align-items: center;/*centrados de manera vertical*/
+}
+header nav .enlaces a{
+		color:#ffffff;
+		margin-left: 0.5em;
+		text-decoration: none;
+}
+header nav .enlaces a:hover{
+	color:#111111;
+	transition: 0.3s;
+}
+
+form{
+	background: #e4dfdf;
+	width: 35%;
+	margin: 50px auto;
+	padding: 1em;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	border-top: 6px solid navy;
+}
+/*etiqueta*/
+form label{
+	display: block;
+	margin: auto;
+	color: #111111;
+	font-size: 1.5em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 1em;
+	text-align: center;
+	/*text-transform: uppercase;*/
+
+}
+/*para las cajas*/
+input[type=text], input[type=password]{
+	width: 100%;
+	padding: 0.5em 1em;
+	margin-bottom: 1.5em;
+	border: none;
+	border-bottom: 1.5px solid rgba(0, 0, 0, 0.5);
+	font-size: 1em;
+	font-weight: bold;
+	color:#111111;
+	outline: none;
+
+}
+form div{
+	background: rgba(255, 0, 0, 0.4);
+	padding: 0.5em 1em;
+	border-radius: 5px;
+	margin-bottom: 1em;
+	display:none;
+}
+
+form .errores{
+	color:#a53935;
+}
+/*boton*/
+input[type=button]{
+	display: block;
+	margin: auto;
+	border: none;
+	background: #ff5722;
+	padding: 0.8em 1.6em;
+	border-radius: 5px;
+	color: #ffffff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+input[type=submit]:hover {
+	background: rgba(51, 103, 21, 0.7);
+}
+input[type=text]:focus, input[type=password]:focus {
+	border-bottom: 1.5px solid #3367d6;
+/*cambio de golpe*/
+	transition: 0.5s all ease;
+}
